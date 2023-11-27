@@ -32,15 +32,15 @@ Snow: snow,
 
 
   return (
-    <div>
+    <div className="container text-center mt-4">
       <h2>{day} Hourly Forecast</h2>
       {hourlyData?.length > 0 && (
-        <table className="table">
-          <thead>
+        <table className="table table-bordered mt-4">
+          <thead className="thead-light">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Time</th>
-              <th scope="col">Temperature</th>
+              <th scope="col">Temperature (Celcius)</th>
               <th scope="col">Overall Weather</th>
             </tr>
           </thead>
@@ -64,6 +64,7 @@ Snow: snow,
       )}
     </div>
   );
+  
 };
 
 export default HourlyForecast;
